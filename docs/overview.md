@@ -20,6 +20,14 @@ This project aims to create a device that makes life easier for photographers.
 
 2) How do we define and provision an OS (Linux) onto a Raspberry PI ?
 * which linux distro will we use ?
+    * Obviously, users won't be interacting directly with the system so the smaller, and faster we can make it the more secure and usable it will be. A good possibility may be a custom build of tinycorelinux http://www.tinycorelinux.net ?
+        * Is the license compatible with a hardware device ?
+        * Is there a big enough community to mean we don't have to rip and replace ?
+        * How much effort will it take to build an image ? How can we update the image if required ?
+        * Can we load everything in memory and make use of persistent storage for configuration ?
+        * How do we replace the OS image, but keep the configuration ?
+        
+        
 * Create a custom image on an SD card ?
 * Can we network boot ?
 * What devices will we support ?
