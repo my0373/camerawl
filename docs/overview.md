@@ -17,6 +17,9 @@ This project aims to create a device that makes life easier for photographers.
 * Raspberry PI 4B 8GB ?
 * Memory card ? What size ?
 * Network connectivity ?
+* Physical screen ?
+    *   Maybe something like https://uk.pi-supply.com/products/adafruit-pitft-plus-480x320-3-5-tfttouchscreen-raspberry-pi-pi-2-model-a-plus-b-plus ?
+    
 
 2) How do we define and provision an OS (Linux) onto a Raspberry PI ?
 * which linux distro will we use ?
