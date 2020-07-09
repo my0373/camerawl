@@ -18,9 +18,26 @@ Yes, we...
 
 We only store code and config in this git repo so we can quickly rebuild the images on demand.
 
-Download the 64 bit image
+### Instructions for a mac
+#### Download the 64 bit image
+
 `$ curl -o groovy-preinstalled-server-arm64+raspi.img.xz http://cdimage.ubuntu.com/ubuntu-server/daily-preinstalled/current/groovy-preinstalled-server-arm64+raspi.img.xz`
 
-Once the images are downloaded, they are unpacked
+#### Unpack the image
+
 `$ gunzip groovy-preinstalled-server-arm64+raspi.img.xz`
 
+#### Mount the image to the default mac mount point 
+
+ `$ hdiutil mount  ./groovy-preinstalled-server-arm64+raspi.img
+$ hdiutil mount  ./groovy-preinstalled-server-arm64+raspi.img
+ /dev/disk4          	FDisk_partition_scheme
+ /dev/disk4s1        	Windows_FAT_32                 	/Volumes/system-boot
+ /dev/disk4s2        	Linux`
+
+#### Modify the config on the disk image
+
+#### Unmount the disk
+`$ hdiutil unmount /Volumes/system-boot`
+
+#### Write the image to the sd card.
