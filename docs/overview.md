@@ -32,6 +32,8 @@ This project aims to create a device that makes life easier for photographers.
         
         
 * Create a custom image on an SD card ?
+    * pibakery looks like an interesting option. 
+    https://www.pibakery.org/docs/install-mac.html
 * Can we network boot ?
 * What devices will we support ?
 
