@@ -8,7 +8,19 @@ The OS images i'm using can be found here.
 http://cdimage.ubuntu.com/ubuntu-server/daily-preinstalled/current/HEADER.html
 
 ## Are we tweaking the images ?
-Yes, so once the images are downloaded, they are unpacked
+Yes, we...
 
+* download the 64 Ubuntu image
+* uncompress it
+* load our configuration
+* repack the image
+* ready for distribution.
+
+We only store code and config in this git repo so we can quickly rebuild the images on demand.
+
+Download the 64 bit image
+`$ curl -o groovy-preinstalled-server-arm64+raspi.img.xz http://cdimage.ubuntu.com/ubuntu-server/daily-preinstalled/current/groovy-preinstalled-server-arm64+raspi.img.xz`
+
+Once the images are downloaded, they are unpacked
 `$ gunzip groovy-preinstalled-server-arm64+raspi.img.xz`
 
