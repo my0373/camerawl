@@ -28,13 +28,13 @@ We only store code and config in this git repo so we can quickly rebuild the ima
 `$ gunzip groovy-preinstalled-server-arm64+raspi.img.xz`
 
 #### Mount the image to the default mac mount point 
-
- `$ hdiutil mount  ./groovy-preinstalled-server-arm64+raspi.img
+<code>
+$ hdiutil mount  ./groovy-preinstalled-server-arm64+raspi.img
 $ hdiutil mount  ./groovy-preinstalled-server-arm64+raspi.img
  /dev/disk4          	FDisk_partition_scheme
  /dev/disk4s1        	Windows_FAT_32                 	/Volumes/system-boot
  /dev/disk4s2        	Linux`
-
+</code>code>
 #### Modify the config on the disk image
 
 #### Unmount the disk
