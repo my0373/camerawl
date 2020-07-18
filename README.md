@@ -11,3 +11,7 @@ A raspberry pi (built and tested on a v4b 8gb), will probably work fine on other
 
 ## Software requirements
 Currently using Ubuntu as the base OS becuase it runs. Expect this to change when I have time to test.
+
+# Project progress
+The project roadmap is tracked on trello
+https://trello.com/b/SphnqiuK/camerawl
