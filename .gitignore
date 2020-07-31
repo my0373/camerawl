@@ -4,3 +4,4 @@
 /httpRequests/
 .DS_Store
 .idea
+*.pyc
