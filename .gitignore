@@ -1,3 +1,7 @@
-# Created by .ignore support plugin (hsz.mobi)
+# Default ignored files
+/shelf/
+# Editor-based HTTP Client requests
+/httpRequests/
+.DS_Store
+.idea
 *.pyc
-.idea/
