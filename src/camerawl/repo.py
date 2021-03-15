@@ -7,12 +7,13 @@ import os
 
 class ImageRepo:
     """
-    The ImageRepo class is a collection of ImagePaths to scan
+    The ImageRepo class is a collection of ImagePaths.
+    It is a convenience class to allow the grouping of multiple paths.
     """
 
+    # TODO: Make sure we test for an ImagePath object, or convert a string.
     def __init__(self, *paths):
         """
-
         :type paths: object
         """
         # _paths is an internal list of
@@ -46,8 +47,6 @@ class ImageRepo:
             #
             # If we don't have anything to return then just return an empty Tuple.
             return tuple(self._files)
-        else:
-            return ()
 
 
 class ImagePath:
@@ -69,17 +68,21 @@ class ImagePath:
 
 
 
-        # TODO: Write some working scan code.
-        if self._scandirs():
-            self._files = self._scandirs()
-            return tuple(self._files)
-        else:
-            return None
+        self._files = self._scandirs(self._path)
+        return self._files
 
-    def _scandirs(self):
-        for root, dirs, files in os.walk(self._path, topdown=False):
-            for name in files:
-                print(os.path.join(root, name))
+
+    def _scandirs(self,sdirs):
+        """
+        A private function to scan the image path and all underlying subdirectories..
+        """
+        tfiles = []
+        for root, dirs, files in os.walk(sdirs, topdown=False):
+            for name in tfiles:
+                files.append(os.path.join(root, name))
+
+        return tuple(tfiles)
+
 
 
     @property
